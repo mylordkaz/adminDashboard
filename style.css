@@ -16,5 +16,108 @@ body{
     width: 100vw;
     height: 100vh;
     font-family: 'Poppins', sans-serif;
+    color: black;
 
+}
+a{
+    color: rgb(0, 0, 0);
+}
+h3{
+    font-weight: 500;
+    font-size: 0.88rem;
+}
+.container{
+    display: grid;
+    grid-template-columns: 12rem auto;
+    grid-template-rows: 12rem auto;
+    margin: 0 auto;
+    width: 96%;
+    gap: 1rem;
+
+}
+aside{
+    height: 100vh;
+}
+aside .sidebar{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background-color: bisque;
+    box-shadow: 0 1rem 2rem rgb(133, 132, 132);
+    border-radius: 15px;
+    height: 80vh;
+}
+aside .sidebar a{
+    display: flex;
+    align-items: center;
+    height: 3.5rem;
+    margin-left: 2rem;
+    gap: 1rem;
+    transition: all 0.3s ease;
+}
+aside .sidebar a:hover{
+    color: gray;
+}
+
+aside .sidebar a:hover span{
+    margin-left: 0.6rem;
+}
+
+header{
+    display: flex;
+    flex-direction: column;
+    margin-top: 2rem;
+    gap: 20px;
+    background-color: aliceblue;
+    border-radius: 15px;
+    box-shadow: 0 1rem 2rem rgb(133, 132, 132);
+
+}
+header .top{
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+    gap: 15px;
+
+}
+header .top a{
+    display: flex;
+    flex: 1;
+    gap: 5px;
+}
+header .top a input{
+    background-color: bisque;
+    border-radius: 15px;
+    width: 25rem;
+}
+header img {
+    width: 2rem;
+    border-radius: 50%;
+    border: 1px solid black;
+}
+header .bottom{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10px;
+}
+header .bottom .user{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+header .bottom .user img{
+    width: 5rem;
+}
+header .bottom .button button{
+    width: 6rem;
+    text-align: center;
+    background-color: lightblue;
+    margin: 5px;
+    padding: 7px 20px;
+    border-radius: 15px;
+}
+header .bottom .button{
+    display: flex;
+    gap: 15px;
 }
